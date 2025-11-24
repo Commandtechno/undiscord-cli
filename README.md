@@ -32,7 +32,7 @@ node ./src/cli.js --help
 The Undiscord CLI provides you with the ability to supply custom request headers. If you are an advanced user, it is recommended to set at least `Cookie`, `User-Agent`, and `X-Super-Properties`. The `--custom-headers` field will be appended to all requests made via the CLI:
 
 ```bash
-node ./src/cli.sj --custom-headers '{"Cookie":"COOKIE HERE","User-Agent":"USER AGENT HERE","X-Super-Properties":"X SUPER PROPERTIES HERE"}' (... remaining options)
+node ./src/cli.js --custom-headers '{"Cookie":"COOKIE HERE","User-Agent":"USER AGENT HERE","X-Super-Properties":"X SUPER PROPERTIES HERE"}' (... remaining options)
 ```
 
 To get appropriate values for these headers, you can access the Developer Options (Cmd+Option+I for Mac, Ctrl+Shift+I for Windows) -> `Network` tab in on Discord Canary or via a web browser and make a request (such as searching for messages). Clicking on the request and selecting `Headers` will show a list of the headers that were used.
